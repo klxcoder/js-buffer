@@ -2,7 +2,8 @@
   "name": "js-buffer",
   "private": true,
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/pako": "^2.0.3"
   },
   "peerDependencies": {
     "typescript": "^5"

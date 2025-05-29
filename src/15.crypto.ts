@@ -38,7 +38,7 @@ async function generateKey(): Promise<CryptoKey> {
 }
 
 (async () => {
-  const key = await generateKey();
+  const key: CryptoKey = await generateKey();
   console.log('key:', key);
   const uint8 = new Uint8Array([1, 2, 3, 4]);
   console.log('uint8:', uint8);

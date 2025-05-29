@@ -53,7 +53,7 @@ async function decrypt(uint8: Uint8Array, key: CryptoKey): Promise<object> {
 }
 
 (async () => {
-  const key = await generateKey();
+  const key: CryptoKey = await generateKey();
   console.log('key:', key);
   const obj = { name: "Alice", age: 30 };
   const uint8 = await encrypt(obj, key);
